@@ -1,0 +1,6 @@
+SELECT DISTINCT ?item  ?itemLabel ?characters ?token  WHERE {
+  ?item wdt:P2 wd:Q2.
+  ?item wdt:P40 ?token.  
+  ?item wdt:P29 ?characters.
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
